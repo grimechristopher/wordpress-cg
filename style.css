@@ -1,0 +1,94 @@
+/*
+Theme Name: Grime_WP_Personal
+Theme URI: http://www.grimechristopher.com
+Author: Christopher Grime
+Author URI: https://www.grimechristopher.com
+Description: A theme for a wordpress portfolio
+Version: 1
+*/
+
+html {
+	scroll-behavior: smooth;
+  }
+.contact-body {
+	height: 20vh;
+}
+.jumbotron {
+	height: 85vh;
+}
+#top-nav {
+	transition: all 0.5s ease-in-out;
+	z-index: 100;
+}
+#nav-bar-title {
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+header {
+	background-image: radial-gradient(circle, #23a6d5, #0077AA, #0088dd);
+	background-size: 200% 200%;
+	animation: gradient 45s ease infinite;
+}
+.card {
+	max-height: 35vh;
+}
+.card-img {
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	object-fit: cover;
+}
+.card-img-overlay .card-text {
+	opacity: 0;
+	visibility: hidden;
+}
+.card-img-overlay:hover {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+	transition: all 1s ease;
+}
+.card-img-overlay:hover .card-text {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 1s ease;
+}
+.card-text { 
+	height: 50%;
+	overflow: hidden;
+	text-shadow: 2px 1px 8px #000000;
+}
+.min-vh-25 {
+	min-height: 25vh;
+}
+.min-vh-50 {
+	min-height: 50vh;
+}
+.min-vh-75 {
+	min-height: 75vh;
+}
+#menu-footer-links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#menu-footer-links a {
+	color: #fcfcfc;
+	text-decoration: none;
+}
+@media (min-width: 575.98px) {
+	.project {
+		flex: 0 1 45%; 
+	}
+}
+@media (min-width: 767.98px) {
+	main {
+		width: 100%;
+	} 
+}
+
+@keyframes gradient {
+	0%{background-position:0% 25%}
+    50%{background-position:100% 76%}
+    100%{background-position:0% 25%}
+}

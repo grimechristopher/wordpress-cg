@@ -1,0 +1,38 @@
+.projects-container {
+    min-height: 100vh;
+    padding-top: 4em;
+}
+.section-title {
+        padding: 0 3em;
+}
+
+@media (min-width: 43em){
+
+    .project-container {
+        max-width: 66em;
+        margin: 4em auto;
+        display: flex;
+    }
+    .project-image {
+        padding-right: 3em;
+        border-right: 2px solid #404041 ;
+        min-width:0;
+        max-width: 40%;
+        position:relative;
+    }
+    .project-image > img {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .project-about {
+        padding-left: 3em;
+        min-width:60%;
+        flex-basis: 60%;
+        
+    }
+    .project-about > a {
+        display: inline-block;
+        margin: 0.33em 0;
+    }
+}
