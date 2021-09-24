@@ -1,8 +1,12 @@
 .projects-container {
     min-height: 100vh;
     padding-top: 4em;
+    margin: auto 1.33em;
 }
-.section-title {
+.project-container {
+    margin: 4em auto;
+}
+.section-title, footer {
         padding: 0 3em;
 }
 
@@ -10,7 +14,6 @@
 
     .project-container {
         max-width: 66em;
-        margin: 4em auto;
         display: flex;
     }
     .project-image {

@@ -108,5 +108,9 @@ const desktopMQ = window.matchMedia('(min-width: 62em)')
             });
         }
 
+    });
 
+    window.addEventListener('resize', function () { 
+        "use strict";
+        window.location.reload(); 
     });

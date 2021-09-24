@@ -15,3 +15,6 @@ p, a {
     font-family: 'Open Sans', sans-serif;
     line-height: 160%;
 }
+footer {
+    margin: auto 1.33em;
+}

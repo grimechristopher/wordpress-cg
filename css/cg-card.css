@@ -41,8 +41,8 @@
 }
 .container-icons > a > i {
     color: #303031;
-    padding-right: 0.6em;
-    font-size: 5em;
+    padding-right: 0.4em;
+    font-size: 4em;
 }
 .container-icons > a > i:hover {
     color: #101017;
@@ -96,6 +96,10 @@
         max-width: 43em;
         margin: 0 auto;
         margin-top: 1.33em;
+    }
+    .container-icons > a > i {
+        padding-right: 0.6em;
+        font-size: 5em;
     }
 }
 
