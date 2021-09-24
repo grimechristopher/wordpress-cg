@@ -37,7 +37,7 @@
                         <p><?php  about_me_field() ?></p>
                     </div>
                     <div class="card-footer-back">
-                        <img src="mountain.png">
+                        <img src="<?php echo rear_img() ?>">
                     </div>
                     </div>
             </div><!-- End of swiper-back -->
