@@ -110,7 +110,12 @@ const desktopMQ = window.matchMedia('(min-width: 62em)')
 
     });
 
-    window.addEventListener('resize', function () { 
-        "use strict";
-        window.location.reload(); 
-    });
+    // If the user is not on mobile I want the page to refresh if the user resizes the browser.
+    // On mobile this causes the browser to constantly refresh when the browser's menu bar hides
+    let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (!isMobile) {
+        window.addEventListener('resize', function () { 
+            "use strict";
+            window.location.reload(); 
+        });
+    } 
