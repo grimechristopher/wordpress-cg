@@ -13,10 +13,14 @@
             <div class="project-about">
                 <h2><?php print get_the_title(); ?></h2>
                 <?php if (get_post_meta($post->ID, 'meta-box-link-github', true)): ?>
-                <a href="<?= get_post_meta($post->ID, 'meta-box-link-github', true)?>">View on Github</a>
+                <div>
+                    <a href="<?= get_post_meta($post->ID, 'meta-box-link-github', true)?>">View on GitHub</a>
+                </div>
                 <?php endif; ?>
                 <?php if (get_post_meta($post->ID, 'meta-box-link-live-project', true)): ?>
-                <a href="<?= get_post_meta($post->ID, 'meta-box-link-live-project', true)?>">View live project</a>
+                <div>
+                    <a href="<?= get_post_meta($post->ID, 'meta-box-link-live-project', true)?>">View Live Project</a>
+                </div>
                 <?php endif?>
                 <p><?php print get_the_excerpt(); ?></p>
                 <?php if ($post->post_content): ?>
