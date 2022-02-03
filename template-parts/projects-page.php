@@ -19,7 +19,12 @@
                 <?php endif; ?>
                 <?php if (get_post_meta($post->ID, 'meta-box-link-live-project', true)): ?>
                 <div>
-                    <a href="<?= get_post_meta($post->ID, 'meta-box-link-live-project', true)?>">View Live Project</a>
+                    <a href="<?= get_post_meta($post->ID, 'meta-box-link-live-project', true)?>">View Live Demo</a>
+                </div>
+                <?php endif?>
+				<?php if (get_post_meta($post->ID, 'meta-box-link-live', true)): ?>
+                <div>
+                    <a href="<?= get_post_meta($post->ID, 'meta-box-link-live', true)?>">View Live Project</a>
                 </div>
                 <?php endif?>
                 <p><?php print get_the_excerpt(); ?></p>
